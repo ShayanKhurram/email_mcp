@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 # Create an MCP server
-mcp = FastMCP("Email Tool", host="127.0.0.1", port=8000)
+mcp = FastMCP("Email Tool", host="0.0.0.0", port=8000)
 
 #MCP tool to send a mail
 @mcp.tool()
