@@ -2,6 +2,9 @@ from mcp.server.fastmcp import FastMCP
 import os
 import smtplib
 
+from dotenv import load_dotenv
+
+load_dotenv()
 # Create an MCP server
 mcp = FastMCP("Email Tool", host="0.0.0.0", port=8000)
 
